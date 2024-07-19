@@ -68,7 +68,7 @@ console.log("Value: ", obj, " Type: ", typeof(obj));
 // O/P : Value:  { key: 'val' }  Type:  object
 
 console.log("Value: ", arr, " Type: ", typeof(arr));
-// O/P : 
+// O/P : Value:  [ 1, 4, 9, 8 ]  Type:  object
 
 console.log("Value: ", newVar, " Type: ", typeof(newVar));
 // O/P : Value:  undefined  Type:  undefined
