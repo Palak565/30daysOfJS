@@ -2,7 +2,7 @@
 
 // ACTIVITY 1: Understanding Promises
 // Task 1: Create a promise that resolves with a message after a 2-second timeout and log the message to the console.
-/*function greeting(name)
+function greeting(name)
 {
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
@@ -55,7 +55,7 @@ task3_1().then((res)=>{
     });
 });
 
-*/
+
 
 // ACTIVITY 3: Using Async/ Await
 // Task 4: Write an async function that waits for a promise to resolve and then logs the resolved value.
