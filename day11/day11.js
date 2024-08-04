@@ -116,13 +116,13 @@ let promise8_1 = new Promise(resolve => setTimeout(() => resolve("Promise 8_1 re
 let promise8_2 = new Promise(resolve => setTimeout(() => resolve("Promise 8_2 resolved"), 2000));
 let promise8_3 = new Promise(resolve => setTimeout(() => resolve("Promise 8_3 resolved"), 3000));
 
-Promise.all([promise8_1, promise8_2, promise8_3])
+Promise.all([promise1, promise2, promise3])
     .then(values => console.log("Task 8:", values));
 
 //Task 9: Use Promise.race to log the value of the first promise that resolves among multiple promises.
-let promise9_1 = new Promise(resolve => setTimeout(() => resolve("Promise 9_1 resolved"), 3000));
-let promise9_2 = new Promise(resolve => setTimeout(() => resolve("Promise 9_2 resolved"), 5000));
-let promise9_3 = new Promise(resolve => setTimeout(() => resolve("Promise 9_3 resolved"), 4000));
+let promise9_1 = new Promise(resolve => setTimeout(() => resolve("Promise A resolved"), 1000));
+let promise9_2 = new Promise(resolve => setTimeout(() => resolve("Promise 9_ resolved"), 2000));
+let promise9_3 = new Promise(resolve => setTimeout(() => resolve("Promise 9_3 resolved"), 1500));
 
-Promise.race([promise9_1, promise9_2, promise9_3])
+Promise.race([promiseA, promiseB, promiseC])
     .then(value => console.log("Task 9:", value));
